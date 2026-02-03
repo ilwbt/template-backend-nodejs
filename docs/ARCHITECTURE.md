@@ -3,6 +3,34 @@
 ## Visão Geral
 [Descreva em 2-3 frases o que o projeto faz]
 
+## 📌 Resumo Executivo
+
+### O que é este projeto?
+Sistema de gerenciamento de tarefas pessoais via API REST.
+
+### Problema que resolve
+Usuários precisam de uma forma simples de organizar suas tarefas diárias, com categorias, prazos e prioridades.
+
+### Público-alvo
+Desenvolvedores que querem integrar gestão de tarefas em suas aplicações.
+
+### Funcionalidades principais
+1. **Autenticação** - Cadastro e login com JWT
+2. **Tarefas** - CRUD completo com filtros e paginação
+3. **Categorias** - Organização por categorias personalizadas
+4. **Prazos** - Alertas de tarefas próximas do vencimento
+
+### Stack tecnológica
+- **Runtime:** Node.js v20+
+- **Linguagem:** JavaScript (ES6+)
+- **Banco:** SQLite (desenvolvimento) / PostgreSQL (produção)
+- **Autenticação:** JWT
+
+### Regras de negócio importantes
+- Um usuário só pode ver suas próprias tarefas
+- Tarefas sem categoria vão para "Geral"
+- Tarefas vencidas há mais de 30 dias são arquivadas automaticamente
+
 ## Estrutura de Pastas
 
 ```
